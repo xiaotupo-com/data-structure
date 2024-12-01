@@ -9,6 +9,6 @@ typedef struct
 } Color;
 
 void set_color_name(Color* color, char *txt, size_t _str_len);
-void print_color(Color* color, size_t arr_len);
+void print_color(const Color* color, size_t arr_len);
 
 #endif
