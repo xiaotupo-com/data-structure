@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.mdx": "mdx",
+        "array.h": "c"
+    },
+    "cmake.sourceDirectory": "/home/zsf/learn/learn-projects/data-structure/array",
+    "cmake.ignoreCMakeListsMissing": true
+}
