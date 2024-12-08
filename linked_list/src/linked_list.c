@@ -22,8 +22,7 @@ node_t *node_init()
  * @param data
  * @param mode 控制从头插入数据还是从尾部插入数据
  ********************************************************************************/
-void node_insert(node_t *head, node_t *back, node_data_t data,
-                 node_mode_t mode)
+void node_insert(node_t *head, node_t *back, node_data_t data, node_mode_t mode)
 {
     if (head->next == NULL && back->next == NULL) {
         node_t *node = (node_t *)malloc(sizeof(node_t));
@@ -68,20 +67,19 @@ void print_node(node_t *n)
     printf("\n");
 }
 
-void delete_head(node_t * head)
+void delete_head(node_t *head)
 {
-    node_t* temp = head->next; // 创建临时指针，指向 第一个数据节点
+    node_t *temp = head->next; // 创建临时指针，指向 第一个数据节点
     head->next = temp->next;
     temp->next = NULL;
     free(temp);
 }
 
-node_data_t node_pop(node_t* head, node_t* back)
+node_data_t node_pop(node_t *head, node_t *back)
 {
     node_data_t result;
-    node_t* temp = head->next;
-    while (temp != NULL)
-    {
+    node_t *temp = head->next;
+    while (temp != NULL) {
         if (temp->next->next == NULL) {
             temp->next = NULL;
             result = back->next->data;

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.mdx": "mdx",
+        "typeinfo": "cpp",
+        "list": "cpp"
+    }
+}
